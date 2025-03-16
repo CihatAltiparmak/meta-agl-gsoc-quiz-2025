@@ -10,10 +10,8 @@ BUGTRACKER = "None"
 SECTION = "graphics"
 
 LICENSE = "CLOSED"
-# LICENSE = "BSD-3-Clause"
-# LIC_FILES_CHKSUM = "file://LICENSE;md5=b7eeb61b41ae366e94383bca5e113fce"
 
-SRCREV = "8bbcca327c43615f454f6a82acb6bf0507adf734"
+SRCREV = "50ca7e5483f120aef9b378ebfa7cb4e2bfa1e5ca"
 SRC_URI = "git://github.com/DarkusAlphaHydranoid/agl-gsoc-flutter-app.git;lfs=1;branch=main;protocol=https;destsuffix=git"
 
 S = "${WORKDIR}/git"
