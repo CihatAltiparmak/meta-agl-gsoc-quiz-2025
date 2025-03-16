@@ -1,0 +1,13 @@
+[Unit]
+Requires=agl-compositor.service
+After=agl-compositor.service
+
+[Service]
+User=agl-driver
+EnvironmentFile=/etc/default/flutter
+EnvironmentFile=-/etc/default/agl-flutter-gsoc-app
+Environment=XDG_RUNTIME_DIR=/run/user/1001/
+ExecStart=/usr/bin/flutter-auto -b /usr/share/flutter/agl-gsoc-flutter-app/${FLUTTER_VERSION}/${FLUTTER_RUNTIME} --xdg-shell-app-id agl-gsoc-flutter-app
+
+[Install]
+WantedBy=graphical.target
