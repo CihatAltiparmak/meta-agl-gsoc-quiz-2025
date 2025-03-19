@@ -8,12 +8,15 @@ Clone this repo to `$AGL_TOP/salmon` directory. Be sure of exporting your worksp
 git clone https://github.com/CihatAltiparmak/meta-agl-gsoc-quiz-2025
 ```
 
-Add the below lines in the end of the the configuration file `bblayers.conf` like below. In this documantaion, we will be using `qemux86-64` machiene configuration. So, edit the file `$AGL_TOP/salmon/qemux86-64/conf/bblayers.conf`.
+Source the script `aglsetup.sh` to put the this layer to configuration files. In this documantaion, we will be using `qemux86-64` machiene configuration.
+```sh
+source meta-agl/scripts/aglsetup.sh -m qemux86-64 -b qemux86-64 agl-flutter agl-devel agl-quiz2025
+```
+
+Now you're in `$AGL_TOP/salmon/qemux86-64` . Source `agl-init-build-env` script.
 
 ```
-BBLAYERS =+ "  \
-    ${METADIR}/meta-agl-gsoc-quiz-2025 \
-"
+source agl-init-build-env
 ```
 
 Compile yocto image
