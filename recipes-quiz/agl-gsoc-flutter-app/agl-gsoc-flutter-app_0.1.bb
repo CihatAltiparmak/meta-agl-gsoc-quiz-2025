@@ -9,7 +9,8 @@ HOMEPAGE = "None"
 BUGTRACKER = "None"
 SECTION = "graphics"
 
-LICENSE = "CLOSED"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=5a370bb64c5496572e8844aa6f80c025"
 
 SRCREV = "50ca7e5483f120aef9b378ebfa7cb4e2bfa1e5ca"
 SRC_URI = "git://github.com/DarkusAlphaHydranoid/agl-gsoc-flutter-app.git;lfs=1;branch=main;protocol=https;destsuffix=git"
